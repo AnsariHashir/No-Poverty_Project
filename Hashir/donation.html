@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+<script>
+function validateForm() {
+    let name = document.forms["myForm"]["fname"].value;
+    let email = document.forms["myForm"]["email"].value;
+    let Phone number = document.forms["myForm"]["Phone number"].value;
+    let Amount = document.forms["myForm"]["Amount"].value;
+
+    if (name === "") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+    if (email === "") {
+        alert("Email must be filled out");
+        return false;
+    }
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    if (phone number === "") {
+        alert("phone number must be filled out");
+        return false;
+    }
+     if (Amount === "") {
+        alert("Amount must be filled out");
+        return false;
+    }   
+    
+ 
+
+ 
+</script>
+</head>
+<body>
+
+<h2>Donation</h2>
+
+<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+
+<label for="fname">Name:</label>
+<input type="text" id="fname" name="fname">
+<br><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<br><br>
+
+
+
+<label for="number">Phone number:</label>
+<input type="number" id="number" name="number">
+<br><br>
+
+<label for="number">Amount</label>
+<input type="number" id="number" name="number">
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+</script>
+
+
+    <p style=
+"text-align:center;">
+<a href=
+homepage.html>BACK </a>
+</p>
+
+
+    <!-- Footer -->
+    <footer style="background:#111827; color:#f9fafb; text-align:center; padding:15px; margin-top:20px;">
+        <p style="margin:0;">&copy; 2025 Government of India – No Poverty Initiative</p>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>
